@@ -223,16 +223,25 @@ public class PlayerController : MonoBehaviour
         if (dashInput)
         {
             dashInput = false;
-            if (!isDashing && canDash)
+            if (canDash)
             {
-                animator.SetTrigger("dashInput");
+                if (!isDashing)
+                {
+                    animator.SetTrigger("dashInput");
 
-                isJumping = false;
-                hasTurnedDuringDash = playerSpriteRenderer.flipX;
+                    isJumping = false;
+                    hasTurnedDuringDash = playerSpriteRenderer.flipX;
 
-                isDashing = true;
-                dashTimer = dashDuration;
-                canDash = false;
+                    isDashing = true;
+                    dashTimer = dashDuration;
+                    canDash = false;
+                }
+
+                if (isDashing)
+                {
+                    dashTimer = dashDuration;
+                    canDash = false;
+                }
             }
         }
 
