@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer playerSpriteRenderer;
     private Animator animator;
+    private AudioManager audioManager;
     public ParticleSystem dashParticles;
     public ParticleSystem jetpackParticles;
     public ParticleSystem burstParticles;
@@ -35,6 +36,7 @@ public class PlayerController : MonoBehaviour
     private float jetpackMeterScale;
     private bool hasReleasedButtonDuringJump;
     private bool isFlying;
+    bool jetpackSound = false;
 
 
     [Header("Burst")]
@@ -74,6 +76,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -270,6 +273,7 @@ public class PlayerController : MonoBehaviour
 
     public void Kill()
     {
+        audioManager.Play("hurt");
         gameManager.StartRespawnTimer();
         Destroy(this.gameObject);
     }
@@ -294,6 +298,7 @@ public class PlayerController : MonoBehaviour
         //Jump if grounded
         if (isGrounded && !jumpButtonDown)
         {
+            audioManager.Play("jump");
             animator.SetTrigger("jumpInput");
             isJumping = true;
             jumpTimeCounter = jumpTime;
@@ -303,6 +308,7 @@ public class PlayerController : MonoBehaviour
         //Check if two jump inputs happened in quick succession, then burst
         if (canBurst)
         {
+            audioManager.Play("burst");
             canBurst = false;
             isFlying = false;
             isBursting = true;

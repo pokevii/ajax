@@ -37,6 +37,7 @@ public class JetpackRefresher : MonoBehaviour
 
     private void Disable()
     {
+        FindObjectOfType<AudioManager>().Play("powerup");
         refresherParticles.Play();
         respawning = true;
         respawnTimer = respawnTime;
