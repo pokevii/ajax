@@ -204,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 866983904}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &34660195
 BoxCollider2D:
@@ -277,6 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 10636924}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &51103301
 BoxCollider2D:
@@ -408,6 +410,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5553961612551655743, guid: dae1fde4dfbd504479f9f2a7fb411d18, type: 3}
+      propertyPath: avatarAnimator
+      value: 
+      objectReference: {fileID: 1072776830}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dae1fde4dfbd504479f9f2a7fb411d18, type: 3}
 --- !u!114 &60137091 stripped
@@ -472,6 +478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 2042613418}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &66180626
 BoxCollider2D:
@@ -646,6 +653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1958286997}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &156806242
 BoxCollider2D:
@@ -8402,6 +8410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1598752619}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &574203045
 BoxCollider2D:
@@ -8627,6 +8636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1975695732}
+  snapCameraToTransform: 1
   dialogueTrigger: No matter.
 --- !u!61 &815903668
 BoxCollider2D:
@@ -8787,6 +8797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1497335477}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &829083002
 BoxCollider2D:
@@ -8956,6 +8967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 2056844286}
+  snapCameraToTransform: 1
   dialogueTrigger: ...Hello? Come in, TPTB.
 --- !u!61 &986360723
 BoxCollider2D:
@@ -9029,6 +9041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1058339572}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &1035591533
 BoxCollider2D:
@@ -9198,6 +9211,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1072776830 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5553961613165211924, guid: dae1fde4dfbd504479f9f2a7fb411d18, type: 3}
+  m_PrefabInstance: {fileID: 60137090}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1099425624
 GameObject:
   m_ObjectHideFlags: 0
@@ -9244,6 +9262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 542540550}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &1099425627
 BoxCollider2D:
@@ -9374,6 +9393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1654913198}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &1216672584
 BoxCollider2D:
@@ -9447,6 +9467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 665944603}
+  snapCameraToTransform: 1
   dialogueTrigger: We will just send more.
 --- !u!61 &1309415326
 BoxCollider2D:
@@ -9520,6 +9541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 92570412}
+  snapCameraToTransform: 1
   dialogueTrigger: It's been lost.
 --- !u!61 &1313726894
 BoxCollider2D:
@@ -9596,6 +9618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1040090718}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &1339245096
 BoxCollider2D:
@@ -9669,6 +9692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 819096519}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &1340478065
 BoxCollider2D:
@@ -25556,6 +25580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1583795449}
+  snapCameraToTransform: 1
   dialogueTrigger: 
 --- !u!61 &1896346831
 BoxCollider2D:
@@ -25741,11 +25766,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8245435691277358027, guid: beb76f349cc0af74597d0c783a12d646, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 134.75
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 8245435691277358027, guid: beb76f349cc0af74597d0c783a12d646, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8245435691277358027, guid: beb76f349cc0af74597d0c783a12d646, type: 3}
       propertyPath: m_LocalPosition.z
