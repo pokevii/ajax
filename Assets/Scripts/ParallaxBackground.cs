@@ -5,7 +5,7 @@ using UnityEngine;
 public class ParallaxBackground : MonoBehaviour
 {
     //thx dani
-    public float length, startPos;
+    private float length, startPos;
     public float parallaxStrength;
     private Camera mainCam;
     // Start is called before the first frame update
@@ -19,7 +19,12 @@ public class ParallaxBackground : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        float temp = (mainCam.transform.position.x * (1 - parallaxStrength));
         float dist = (mainCam.transform.position.x * parallaxStrength);
+
         transform.position = new Vector3(startPos + dist, transform.position.y, transform.position.z);
+
+        if (temp > startPos + length) startPos += length;
+        else if (temp < startPos - length) startPos -= length;
     }
 }

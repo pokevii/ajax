@@ -6,7 +6,14 @@ public class JetpackRefresher : MonoBehaviour
 {
     public float respawnTime = 4;
     private float respawnTimer;
+    private ParticleSystem refresherParticles;
     private bool respawning = false;
+
+    private void Start()
+    {
+        refresherParticles = GetComponentInChildren<ParticleSystem>();
+    }
+
     private void Update()
     {
         if (respawning)
@@ -30,6 +37,7 @@ public class JetpackRefresher : MonoBehaviour
 
     private void Disable()
     {
+        refresherParticles.Play();
         respawning = true;
         respawnTimer = respawnTime;
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
@@ -38,6 +46,7 @@ public class JetpackRefresher : MonoBehaviour
 
     private void Enable()
     {
+        refresherParticles.Stop();
         respawning = false;
         gameObject.GetComponent<SpriteRenderer>().enabled = true;
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
