@@ -6,12 +6,18 @@ public class AnimationTrigger : MonoBehaviour
 {
     public Animator animator;
     public string triggerToFire;
+    private bool triggered = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            animator.SetTrigger(triggerToFire);
+            if (!triggered)
+            {
+                Debug.Log("YEP HERE WE GO");
+                animator.SetTrigger(triggerToFire);
+                triggered = true;
+            }
         }
     }
 }

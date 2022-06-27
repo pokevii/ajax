@@ -9,13 +9,12 @@ public class CreditsNameHoverAlerter : MonoBehaviour
     private EventTrigger.Entry[] trigEntries = new EventTrigger.Entry[2];
     
     public float credsDispY;
-    
-    [TextArea(3, 3)]
-    public string credits
+
 #if UNITY_EDITOR
-    ;
+    [TextArea(3, 3)]
+    public string credits;
 #else
-    { get; }
+    public string credits { get; }
 #endif
 
     void Start()

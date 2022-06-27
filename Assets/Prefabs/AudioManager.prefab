@@ -172,38 +172,50 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
   - name: intro
-    clip: {fileID: 8300000, guid: 5ae1bb23d71243c43b29c315d59a1b13, type: 3}
+    clip: {fileID: 8300000, guid: fe260f505e103864f836d83d4135b351, type: 3}
     loop: 1
-    volume: 0.6
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: ruins
-    clip: {fileID: 8300000, guid: da2ef530deb7c7344b02b8e0a22d30f2, type: 3}
+    clip: {fileID: 8300000, guid: b46941bc94508fd4791dff8fd079acaa, type: 3}
     loop: 1
-    volume: 0.6
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: forest
-    clip: {fileID: 8300000, guid: 935055546ca08314d9c57aeef536fc85, type: 3}
+    clip: {fileID: 8300000, guid: 878c0654178a6e742b34e3465b4f9427, type: 3}
     loop: 1
-    volume: 0.6
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: corruption
-    clip: {fileID: 8300000, guid: 02962333a2eaecb4ebbcd3a3cfe6560b, type: 3}
+    clip: {fileID: 8300000, guid: 505b202331e374246b528a195774f0cf, type: 3}
     loop: 1
-    volume: 0.6
+    volume: 0.5
     pitch: 1
     source: {fileID: 0}
   - name: cube ding
     clip: {fileID: 8300000, guid: 9fbd1ab47876b1d469469fe69bd61110, type: 3}
     loop: 0
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
   - name: key
     clip: {fileID: 8300000, guid: 9e534dc7cf03b8a4d925629c00b4603d, type: 3}
     loop: 0
     volume: 0
     pitch: 0
+    source: {fileID: 0}
+  - name: outro
+    clip: {fileID: 8300000, guid: 5d32e0bcee7ab7945ab33020eac0c638, type: 3}
+    loop: 0
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+  - name: dash
+    clip: {fileID: 8300000, guid: 4ffe9611cf3a6ef41a81f63acfee07e8, type: 3}
+    loop: 0
+    volume: 0.8
+    pitch: 1
     source: {fileID: 0}

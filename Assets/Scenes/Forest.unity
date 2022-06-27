@@ -35600,7 +35600,7 @@ Transform:
   m_Children:
   - {fileID: 1684291020}
   m_Father: {fileID: 75648034}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &49745253
 MonoBehaviour:
@@ -35616,7 +35616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1684291020}
   snapCameraToTransform: 1
-  dialogueTrigger: Be sure to contact us if you find anything. Command out.
+  dialogueTrigger: Find out information about this mass and report back.
 --- !u!61 &49745254
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35672,7 +35672,6 @@ Transform:
   m_Children:
   - {fileID: 2024836099}
   - {fileID: 1324417447}
-  - {fileID: 1916374597}
   - {fileID: 1526704777}
   - {fileID: 641648122}
   - {fileID: 49745252}
@@ -41819,7 +41818,7 @@ Transform:
   m_Children:
   - {fileID: 1338725261}
   m_Father: {fileID: 75648034}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &347488103
 MonoBehaviour:
@@ -42221,7 +42220,7 @@ Transform:
   m_Children:
   - {fileID: 113722839}
   m_Father: {fileID: 75648034}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &641648123
 MonoBehaviour:
@@ -42237,7 +42236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 113722839}
   snapCameraToTransform: 1
-  dialogueTrigger: It is our hope that you will discover what this mass is.
+  dialogueTrigger: There is an organic mass orbiting around the planet.
 --- !u!61 &641648124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42418,7 +42417,7 @@ GameObject:
   - component: {fileID: 827959056}
   - component: {fileID: 827959055}
   m_Layer: 5
-  m_Name: Fade Image
+  m_Name: Fade In
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42967,36 +42966,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5553961612513251303, guid: dae1fde4dfbd504479f9f2a7fb411d18, type: 3}
   m_PrefabInstance: {fileID: 42925746}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1233125816
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1233125817}
-  m_Layer: 0
-  m_Name: Respawn Point (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1233125817
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233125816}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16, y: -7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1916374597}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1253271555
 GameObject:
   m_ObjectHideFlags: 0
@@ -43095,63 +43064,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxStrength: 0.8
---- !u!1001 &1289847289
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275816, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4964495253537275863, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
-      propertyPath: m_Name
-      value: AudioManager
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 135300aff94e5b94fb26a09c100420fc, type: 3}
 --- !u!4 &1324417447 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2325525412118307523, guid: 253ce1290c03c1b4ba379972e47d8d8c, type: 3}
@@ -43332,7 +43244,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundName: forest
-  fadeOut: 1
+  fade: 1
+  play: 0
+  stop: 1
 --- !u!1 &1488097958 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5553961612551655730, guid: dae1fde4dfbd504479f9f2a7fb411d18, type: 3}
@@ -43451,7 +43365,7 @@ Transform:
   m_Children:
   - {fileID: 1106083708}
   m_Father: {fileID: 75648034}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1526704778
 MonoBehaviour:
@@ -43467,8 +43381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 1106083708}
   snapCameraToTransform: 1
-  dialogueTrigger: We've detected an odd organic-looking mass on the opposite side
-    of the planet.
+  dialogueTrigger: 'You have one directive: investigate the planet known as AJAX.'
 --- !u!61 &1526704779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43593,6 +43506,101 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxStrength: 0.8
+--- !u!1 &1616708408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1616708413}
+  - component: {fileID: 1616708412}
+  - component: {fileID: 1616708409}
+  - component: {fileID: 1616708411}
+  m_Layer: 5
+  m_Name: Fade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1616708409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616708408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!95 &1616708411
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616708408}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 76371b0c63a736e479cd2b84c0ec0b4e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!222 &1616708412
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616708408}
+  m_CullTransparentMesh: 1
+--- !u!224 &1616708413
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616708408}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -80}
+  m_LocalScale: {x: 22.13336, y: 22.13336, z: 22.13336}
+  m_Children: []
+  m_Father: {fileID: 1161835263}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3633.4758, y: 1896.9241}
+  m_SizeDelta: {x: 366.327, y: 224.5724}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1678796108
 GameObject:
   m_ObjectHideFlags: 0
@@ -43814,80 +43822,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxStrength: 0.3
---- !u!1 &1916374596
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1916374597}
-  - component: {fileID: 1916374599}
-  - component: {fileID: 1916374598}
-  m_Layer: 0
-  m_Name: Room (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1916374597
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916374596}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.09, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1233125817}
-  m_Father: {fileID: 75648034}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1916374598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916374596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172162b6af7e384428abac631926236a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 1233125817}
-  snapCameraToTransform: 0
-  dialogueTrigger: 'You have one directive: investigate the planet known as AJAX.'
---- !u!61 &1916374599
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916374596}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 6.46, y: 19.5}
-  m_EdgeRadius: 0
 --- !u!1001 &1946007034
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,7 +12,7 @@ public class AnimatorEvents : MonoBehaviour
     private AudioManager audioManager;
     private void Start()
     {
-        audioManager = FindObjectOfType<AudioManager>();
+        audioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
     public void PlaySound(string sound)

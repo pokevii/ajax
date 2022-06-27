@@ -314,8 +314,15 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: SendTriggerToGameObject
-    data: 
+    functionName: PlaySound
+    data: jetpack
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 5.9166665
+    functionName: StopSound
+    data: jetpack
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0

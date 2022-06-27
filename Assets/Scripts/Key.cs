@@ -6,7 +6,6 @@ public class Key : MonoBehaviour
 {
     public GameObject door;
     private AudioManager audioManager;
-    bool collected = false;
 
     private void Start()
     {
@@ -17,9 +16,9 @@ public class Key : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            audioManager.Play("key");
             Destroy(door);
             Destroy(this.gameObject);
+            if (audioManager != null) audioManager.Play("key");
         }
     }
 }

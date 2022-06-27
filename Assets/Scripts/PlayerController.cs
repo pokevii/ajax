@@ -36,7 +36,6 @@ public class PlayerController : MonoBehaviour
     private float jetpackMeterScale;
     private bool hasReleasedButtonDuringJump;
     private bool isFlying;
-    bool jetpackSound = false;
 
 
     [Header("Burst")]
@@ -171,6 +170,15 @@ public class PlayerController : MonoBehaviour
         if (isDashing)
         {
             dashEmission.enabled = true;
+            if (playerSpriteRenderer.flipX)
+            {
+                dashParticles.transform.localPosition = new Vector2(0.5f, -0.25f);
+                dashParticles.transform.localRotation = Quaternion.Euler(new Vector3(0, 180, 0));
+            } else
+            {   
+                dashParticles.transform.localPosition = new Vector2(-0.5f, -0.25f);
+                dashParticles.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
+            }
         }
         else dashEmission.enabled = false;
         #endregion
@@ -231,6 +239,7 @@ public class PlayerController : MonoBehaviour
                 if (!isDashing)
                 {
                     animator.SetTrigger("dashInput");
+                    audioManager.Play("dash");
 
                     isJumping = false;
                     hasTurnedDuringDash = playerSpriteRenderer.flipX;
@@ -273,7 +282,7 @@ public class PlayerController : MonoBehaviour
 
     public void Kill()
     {
-        audioManager.Play("hurt");
+        if(audioManager != null) audioManager.Play("hurt");
         gameManager.StartRespawnTimer();
         Destroy(this.gameObject);
     }
@@ -298,7 +307,10 @@ public class PlayerController : MonoBehaviour
         //Jump if grounded
         if (isGrounded && !jumpButtonDown)
         {
-            audioManager.Play("jump");
+            if(audioManager != null)
+            {
+                audioManager.Play("jump");
+            }
             animator.SetTrigger("jumpInput");
             isJumping = true;
             jumpTimeCounter = jumpTime;
@@ -308,7 +320,10 @@ public class PlayerController : MonoBehaviour
         //Check if two jump inputs happened in quick succession, then burst
         if (canBurst)
         {
-            audioManager.Play("burst");
+            if(audioManager != null)
+            {
+                audioManager.Play("burst");
+            }
             canBurst = false;
             isFlying = false;
             isBursting = true;

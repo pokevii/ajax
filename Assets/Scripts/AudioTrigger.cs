@@ -5,7 +5,9 @@ using UnityEngine;
 public class AudioTrigger : MonoBehaviour
 {
     public string soundName;
-    public bool fadeOut;
+    public bool fade;
+    public bool play;
+    public bool stop;
     private AudioManager audioManager;
 
     private void Start()
@@ -17,13 +19,27 @@ public class AudioTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (fadeOut)
+            if (stop)
             {
-                audioManager.FadeOut(soundName);
-            } else
+                if (fade)
+                {
+                    audioManager.FadeOut(soundName);
+                } else
+                {
+                    audioManager.Stop(soundName);
+                }
+            } 
+            else if (play)
             {
-                audioManager.FadeIn(soundName);
+                if (fade)
+                {
+                    audioManager.FadeIn(soundName);
+                } else
+                {
+                    audioManager.Play(soundName);
+                }
             }
+
         }
     }
 }

@@ -125,7 +125,7 @@ public class AudioManager : MonoBehaviour
 
         while (s.source.volume > 0)
         {
-            s.source.volume -= 0.003f;
+            s.source.volume -= 0.0023f;
             yield return null;
         }
         s.source.Stop();

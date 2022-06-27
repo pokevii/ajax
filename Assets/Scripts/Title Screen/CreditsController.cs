@@ -16,7 +16,7 @@ public class CreditsController : MonoBehaviour
     
     private TextMeshProUGUI credsTextComp;
     private TransformDestablizer credsDestabComp;
-    private List<CreditsNameHoverAlerter> hoverAlerters;
+    //private List<CreditsNameHoverAlerter> hoverAlerters;
     
     void Start()
     {
@@ -54,9 +54,9 @@ public class CreditsController : MonoBehaviour
             }
         }
         
-        Transform contribTransf = transform.Find("Contributors").transform;
-        hoverAlerters = new List<CreditsNameHoverAlerter>(contribTransf.childCount);
-        foreach (Transform child in contribTransf)
+        //Transform contribTransf = transform.Find("Contributors").transform;
+        //hoverAlerters = new List<CreditsNameHoverAlerter>(contribTransf.childCount);
+        /*foreach (Transform child in contribTransf)
         {
             // inform the alerter of where the text should be located
             CreditsNameHoverAlerter alerter = child.gameObject
@@ -71,19 +71,19 @@ public class CreditsController : MonoBehaviour
             alerter.credsDispY = desiredY + halfTextHeight > halfCanvasHeight
                     ? halfCanvasHeight - halfTextHeight
                     : desiredY;
-        }
+        }*/
         // clear the text
-        credsTextComp.text = "";
+        //credsTextComp.text = "";
     }
     
     public void EnableCredits()
     {
         canvasComp.enabled = true;
         
-        foreach (CreditsNameHoverAlerter alerter in hoverAlerters)
+        /*foreach (CreditsNameHoverAlerter alerter in hoverAlerters)
         {
             alerter.StartListening(this);
-        }
+        }*/
         
         foreach (KeyValuePair<EventTrigger, EventTrigger.Entry[]> kvp in credTrigs)
         {
@@ -103,10 +103,10 @@ public class CreditsController : MonoBehaviour
     {
         canvasComp.enabled = false;
         
-        foreach (CreditsNameHoverAlerter alerter in hoverAlerters)
+        /*foreach (CreditsNameHoverAlerter alerter in hoverAlerters)
         {
             alerter.StopListening();
-        }
+        }*/
         
         foreach (KeyValuePair<EventTrigger, EventTrigger.Entry[]> kvp in credTrigs)
         {

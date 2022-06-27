@@ -37,12 +37,12 @@ public class JetpackRefresher : MonoBehaviour
 
     private void Disable()
     {
-        FindObjectOfType<AudioManager>().Play("powerup");
         refresherParticles.Play();
         respawning = true;
         respawnTimer = respawnTime;
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        FindObjectOfType<AudioManager>().Play("powerup");
     }
 
     private void Enable()
